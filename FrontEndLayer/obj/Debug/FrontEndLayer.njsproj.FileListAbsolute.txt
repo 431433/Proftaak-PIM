@@ -1,0 +1,3 @@
+C:\Users\jenso\source\repos\FrontEndLayer\FrontEndLayer\obj\Debug\FrontEndLayer.njsproj.AssemblyReference.cache
+C:\Users\jenso\source\repos\FrontEndLayer\FrontEndLayer\obj\Debug\FrontEndLayer.njsproj.CoreCompileInputs.cache
+C:\Users\jenso\source\repos\FrontEndLayer\FrontEndLayer\bin\Microsoft.NodejsTools.WebRole.dll
