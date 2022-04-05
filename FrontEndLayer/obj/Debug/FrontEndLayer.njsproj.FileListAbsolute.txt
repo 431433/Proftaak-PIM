@@ -1,3 +1,6 @@
 C:\Users\jenso\source\repos\FrontEndLayer\FrontEndLayer\obj\Debug\FrontEndLayer.njsproj.AssemblyReference.cache
 C:\Users\jenso\source\repos\FrontEndLayer\FrontEndLayer\obj\Debug\FrontEndLayer.njsproj.CoreCompileInputs.cache
 C:\Users\jenso\source\repos\FrontEndLayer\FrontEndLayer\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\jenso\Documents\GitHub\Proftaak-PIM\FrontEndLayer\obj\Debug\FrontEndLayer.njsproj.AssemblyReference.cache
+C:\Users\jenso\Documents\GitHub\Proftaak-PIM\FrontEndLayer\obj\Debug\FrontEndLayer.njsproj.CoreCompileInputs.cache
+C:\Users\jenso\Documents\GitHub\Proftaak-PIM\FrontEndLayer\bin\Microsoft.NodejsTools.WebRole.dll
