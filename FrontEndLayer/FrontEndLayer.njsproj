@@ -31,11 +31,18 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\frontendwoc - Web Deploy.pubxml" />
     <Content Include="public\favicon.ico" />
     <Content Include="public\index.html" />
     <Content Include="src\App.vue" />
     <Content Include="src\components\Home.vue" />
+    <Content Include="src\components\List.vue">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="src\components\logo-ah.png" />
+    <Content Include="src\components\logo-amazon.jpg" />
+    <Content Include="src\components\logo-etos.jpg" />
+    <Content Include="src\components\logo-jumbo.png" />
     <Content Include="src\components\Partners.vue">
       <SubType>Code</SubType>
     </Content>
@@ -48,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dist\" />
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="public\" />
     <Folder Include="src\" />
     <Folder Include="src\assets\" />

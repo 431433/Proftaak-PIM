@@ -6,9 +6,51 @@
                     <b-row>
                         <b-col><img class="logo" src="./logo-ah.png" alt="" /></b-col>
                         <b-col>Albert Heijn</b-col>
-                        <b-col cols="4"> <b-progress :max="max"><b-progress-bar :value="value" :label="`${((value / max) * 100).toFixed(2)}%`" show-progress></b-progress-bar></b-progress></b-col>
+                        <b-col cols="4"> <b-progress :max="max"><b-progress-bar :value="AHValue" :label="`${((AHValue / max) * 100).toFixed(2)}%`" show-progress></b-progress-bar></b-progress></b-col>
                         <b-col>Last export: 23/03/2022</b-col>
                         <b-col>9733 products</b-col>
+                    </b-row>
+                </b-container>
+            </a>
+        </div>
+
+        <div class="partners">
+            <a href="#partnerName2">
+                <b-container class="center rows" style="max-width: 1200px">
+                    <b-row>
+                        <b-col><img class="logo" src="./logo-jumbo.png" alt="" /></b-col>
+                        <b-col>Jumbo</b-col>
+                        <b-col cols="4"> <b-progress :max="max"><b-progress-bar :value="JumboValue" :label="`${((JumboValue / max) * 100).toFixed(2)}%`" show-progress></b-progress-bar></b-progress></b-col>
+                        <b-col>Last export: 11/01/2022</b-col>
+                        <b-col>7362 products</b-col>
+                    </b-row>
+                </b-container>
+            </a>
+        </div>
+
+        <div class="partners">
+            <a href="#partnerName3">
+                <b-container class="center rows" style="max-width: 1200px">
+                    <b-row>
+                        <b-col><img class="logo" src="./logo-etos.jpg" alt="" /></b-col>
+                        <b-col>Etos</b-col>
+                        <b-col cols="4"> <b-progress :max="max"><b-progress-bar :value="EtosValue" :label="`${((EtosValue / max) * 100).toFixed(2)}%`" show-progress></b-progress-bar></b-progress></b-col>
+                        <b-col>Last export: 31/01/2022</b-col>
+                        <b-col>3823 products</b-col>
+                    </b-row>
+                </b-container>
+            </a>
+        </div>
+
+        <div class="partners">
+            <a href="#partnerName4">
+                <b-container class="center rows" style="max-width: 1200px">
+                    <b-row>
+                        <b-col><img class="logo" src="./logo-amazon.jpg" alt="" /></b-col>
+                        <b-col>Amazon</b-col>
+                        <b-col cols="4"> <b-progress :max="max"><b-progress-bar :value="AmazonValue" :label="`${((AmazonValue / max) * 100).toFixed(2)}%`" show-progress variant="success"></b-progress-bar></b-progress></b-col>
+                        <b-col>Last export: 12/04/2022</b-col>
+                        <b-col>477921 products</b-col>
                     </b-row>
                 </b-container>
             </a>
@@ -24,7 +66,10 @@
         name: 'Partners',
         data() {
             return {
-                value: 80,
+                AHValue: 80,
+                JumboValue: 75,
+                EtosValue: 35,
+                AmazonValue: 100,
                 max: 100,
             }
         }

@@ -18,6 +18,10 @@
 
             <Partners/>
 
+            <hr />  
+
+            <List/>
+
         </div>
     </div>
 </template>
@@ -28,11 +32,13 @@
     Vue.use(BootstrapVue)
     import SideNav from './SideNav.vue'
     import Partners from './Partners.vue'
+    import List from './List.vue'
     export default {
         name: 'Home',
         components: {
             SideNav,
             Partners,
+            List,
         }
     }
 </script>

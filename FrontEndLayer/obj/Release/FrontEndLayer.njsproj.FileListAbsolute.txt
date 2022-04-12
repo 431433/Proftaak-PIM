@@ -1,0 +1,3 @@
+C:\Users\jenso\Documents\GitHub\Proftaak-PIM\FrontEndLayer\obj\Release\FrontEndLayer.njsproj.AssemblyReference.cache
+C:\Users\jenso\Documents\GitHub\Proftaak-PIM\FrontEndLayer\obj\Release\FrontEndLayer.njsproj.CoreCompileInputs.cache
+C:\Users\jenso\Documents\GitHub\Proftaak-PIM\FrontEndLayer\bin\Microsoft.NodejsTools.WebRole.dll

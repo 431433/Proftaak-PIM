@@ -9,12 +9,14 @@
     import Home from './components/Home.vue';
     import SideNav from './components/SideNav.vue';
     import Partners from './components/Partners.vue';
+    import List from './components/List.vue';
 
     @Component({
         components: {
             Home,
             SideNav,
-            Partners
+            Partners,
+            List
         }
     })
     export default class App extends Vue { }
