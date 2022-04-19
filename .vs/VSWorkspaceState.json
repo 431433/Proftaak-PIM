@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FrontEndLayer",
+    "\\FrontEndLayer\\src"
   ],
-  "SelectedNode": "\\FrontEndLayer.sln",
+  "SelectedNode": "\\FrontEndLayer\\src\\App.vue",
   "PreviewInSolutionExplorer": false
 }

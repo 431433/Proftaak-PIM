@@ -1,26 +1,30 @@
 <template>
     <div>
-        <SideNav/>
+        <SideNav />
 
 
         <div class="main">
             <h1 class="title">Welcome</h1><br />
-                <div class="row center" style="max-width: 1200px">
-                    <b-card-group class="">
-                        <b-card header="Created products" class="text-center" title="420" header-bg-variant="primary" header-text-variant="white">
-                        <b-card-text style="margin-left:100px">total</b-card-text></b-card>
-                        <b-card header="Enriched fields" class="text-center" title="1500" header-bg-variant="primary" header-text-variant="white">
-                            <b-card-text style="margin-left:100px">total</b-card-text></b-card>
-                        <b-card header="Partners" class="text-center" title="23" header-bg-variant="primary" header-text-variant="white">
-                            <b-card-text style="margin-left:100px">total</b-card-text></b-card>
-                    </b-card-group>
-                </div><br />
+            <div class="row center" style="max-width: 1200px">
+                <b-card-group class="">
+                    <b-card header="Created products" class="text-center" title="" header-bg-variant="primary" header-text-variant="white">
+                        <p class="info">{{info.Totalproducts}} </p>
+                        <b-card-text class="cardtext" style="margin-left:100px">total</b-card-text>
+                    </b-card>
+                    <b-card header="Enriched fields" class="text-center" title="" header-bg-variant="primary" header-text-variant="white">
+                        <p class="info">{{info.Fields}} </p>
+                        <b-card-text class="cardtext" style="margin-left:100px">total</b-card-text>
+                    </b-card>
+                    <b-card header="Partners" class="text-center" title="" header-bg-variant="primary" header-text-variant="white">
+                        <p class="info">{{info.Partners}} </p>
+                        <b-card-text class="cardtext" style="margin-left:100px">total</b-card-text>
+                    </b-card>
+                </b-card-group>
+            </div><br />
 
-            <Partners/>
+            <Partners />
 
-            <hr />  
-
-            <List/>
+            <hr />
 
         </div>
     </div>
@@ -29,23 +33,39 @@
 <script>
     import Vue from 'vue'
     import { BootstrapVue } from 'bootstrap-vue'
-    Vue.use(BootstrapVue)
     import SideNav from './SideNav.vue'
     import Partners from './Partners.vue'
     import List from './List.vue'
+    import axios from 'axios'
+    import VueAxios from 'vue-axios'
+    Vue.use(BootstrapVue, axios, VueAxios)
+
     export default {
         name: 'Home',
         components: {
             SideNav,
             Partners,
             List,
+        },
+        data() {
+            return {
+                info:{}
+            };
+        },
+        mounted() {
+            axios
+                .get('https://i437675.luna.fhict.nl/home/basic')
+                .then(response => {
+                    console.warn(response.data)
+                    this.info = response.data
+                })
         }
     }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-    .margin-left{
+    .margin-left {
         margin-left: 200px;
     }
 
@@ -102,15 +122,20 @@
         clear: none;
         float: left;
         margin: 3px;
-    } 
+    }
 
     /* Style page content */
     .main {
         margin-left: 160px; /* Same as the width of the sidebar */
         padding: 0px 10px;
-    }  
+    }
 
     template {
         background-color: whitesmoke;
+    }
+
+    .info {
+        font-weight: 700;
+        font-size: calc(1.275rem + .3vw);
     }
 </style>
