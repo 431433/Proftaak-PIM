@@ -24,6 +24,9 @@ jobs:
 
       - name: Restore NuGet packages
         run: nuget restore
+        
+      - name: Install typescript
+        run: npm install --save-dev typescript
 
       - name: Publish to folder
         run: msbuild /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\"
