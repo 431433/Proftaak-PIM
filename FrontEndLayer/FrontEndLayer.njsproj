@@ -35,7 +35,12 @@
     <Content Include="public\favicon.ico" />
     <Content Include="public\index.html" />
     <Content Include="src\App.vue" />
+    <Content Include="src\components\Dynamic.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Export.png" />
     <Content Include="src\components\Home.vue" />
+    <Content Include="src\components\ImportBtn.png" />
     <Content Include="src\components\List.vue">
       <SubType>Code</SubType>
     </Content>
@@ -43,18 +48,27 @@
     <Content Include="src\components\logo-amazon.jpg" />
     <Content Include="src\components\logo-etos.jpg" />
     <Content Include="src\components\logo-jumbo.png" />
+    <Content Include="src\components\OverviewBtn.png" />
     <Content Include="src\components\Partners.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Router.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="src\components\SideNav.vue">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="src\components\Start.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\Stats.png" />
     <Content Include="tsconfig.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dist\" />
+    <Folder Include="Properties\" />
     <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="public\" />
     <Folder Include="src\" />

@@ -1,9 +1,14 @@
 <template>
     <div>
-        <SideNav/>
-
+        <SideNav />
 
         <div class="main">
+            <Start />
+            <hr />  
+            <Dynamic/>
+        </div>
+
+        <!--<div class="main">
             <h1 class="title">Welcome</h1><br />
                 <div class="row center" style="max-width: 1200px">
                     <b-card-group class="">
@@ -18,11 +23,7 @@
 
             <Partners/>
 
-            <hr />  
-
-            <List/>
-
-        </div>
+        </div>-->
     </div>
 </template>
 
@@ -33,19 +34,23 @@
     import SideNav from './SideNav.vue'
     import Partners from './Partners.vue'
     import List from './List.vue'
+    import Start from './Start.vue'
+    import Dynamic from './Dynamic.vue'
     export default {
         name: 'Home',
         components: {
             SideNav,
             Partners,
             List,
+            Start,
+            Dynamic,
         }
     }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-    .margin-left{
+    .margin-left {
         margin-left: 200px;
     }
 
@@ -102,13 +107,13 @@
         clear: none;
         float: left;
         margin: 3px;
-    } 
+    }
 
     /* Style page content */
     .main {
         margin-left: 160px; /* Same as the width of the sidebar */
         padding: 0px 10px;
-    }  
+    }
 
     template {
         background-color: whitesmoke;

@@ -4,6 +4,7 @@
     </div>
 </template>
 
+<script src="Router.js"></script>
 <script lang="ts">
     import { Component, Vue } from 'vue-property-decorator';
     import Home from './components/Home.vue';

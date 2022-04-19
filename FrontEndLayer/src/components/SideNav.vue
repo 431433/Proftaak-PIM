@@ -7,6 +7,7 @@
             <a href="#">Overview</a>
             <a href="#">Import</a>
             <a href="#">Export</a>
+            <a href="#">Stats</a>
         </div>
     </div>
 </template>
@@ -24,6 +25,7 @@
     .image {
         max-height: 90px;
         max-width: 90px;
+        margin-left:35px;
     }
 
     /* The sidebar menu */
@@ -45,13 +47,13 @@
             padding: 6px 8px 6px 16px;
             text-decoration: blink;
             font-size: 25px;
-            color: black;
+            color: white;
             display: block;
         }
 
             /* When you mouse over the navigation links, change their color */
             .sidenav a:hover {
-                color: #f1f1f1;
+                color: black;
             }
 
 
