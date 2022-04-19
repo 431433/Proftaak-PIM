@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dist\" />
+    <Folder Include="Properties\" />
     <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="public\" />
     <Folder Include="src\" />
