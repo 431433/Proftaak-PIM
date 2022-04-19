@@ -27,6 +27,9 @@ jobs:
         
       - name: Run npm
         run: npm i -g npm
+        
+      - name: Install typescript
+        run: npm install -g typescript
 
       - name: Publish to folder
         run: msbuild /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\"
